@@ -1,0 +1,80 @@
+common name: scr
+number of variants: 5
+total number of procedures using the common block: 6
+procedures first: sub1b
+procedures second: sub4
+--- 
++++ 
+@@ -1,13 +1,11 @@
+ 
+ struct common_scr
+ {
+-  int i;
++  arr<int> i;
+   int j;
+-  int k;
+ 
+   common_scr() :
+-    i(fem::int0),
+-    j(fem::int0),
+-    k(fem::int0)
++    i(dimension(2), fem::fill0),
++    j(fem::int0)
+   {}
+ };
+
+procedures second: sub1a
+--- 
++++ 
+@@ -2,12 +2,10 @@
+ struct common_scr
+ {
+   int i;
+-  int j;
+-  int k;
++  arr<int> j;
+ 
+   common_scr() :
+     i(fem::int0),
+-    j(fem::int0),
+-    k(fem::int0)
++    j(dimension(2), fem::fill0)
+   {}
+ };
+
+procedures second: sub2a sub2b
+--- 
++++ 
+@@ -2,12 +2,10 @@
+ struct common_scr
+ {
+   int i;
+-  int j;
+-  int k;
++  float x;
+ 
+   common_scr() :
+     i(fem::int0),
+-    j(fem::int0),
+-    k(fem::int0)
++    x(fem::float0)
+   {}
+ };
+
+procedures second: sub3
+--- 
++++ 
+@@ -3,11 +3,9 @@
+ {
+   int i;
+   int j;
+-  int k;
+ 
+   common_scr() :
+     i(fem::int0),
+-    j(fem::int0),
+-    k(fem::int0)
++    j(fem::int0)
+   {}
+ };
+

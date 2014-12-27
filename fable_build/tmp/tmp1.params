@@ -1,0 +1,4 @@
+b=1
+include file tmp2.params
+y=2
+

@@ -1,0 +1,6 @@
+# THIS IS AN AUTOMATICALLY GENERATED FILE.
+# DO NOT EDIT! CHANGES WILL BE LOST.
+SConsignFile()
+Repository(r"/home/chris/go/src/github.com/ctessum/fable-go/fable_sources")
+SConscript("libtbx/SConscript")
+SConscript("fable/SConscript")

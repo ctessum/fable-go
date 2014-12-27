@@ -1,0 +1,14 @@
+a=1
+include file tmp1.params
+s {
+  a=2
+  include file tmp1.params
+  z=2
+}
+s {
+  a=3
+  include file tmp1.params
+  z=3
+}
+z=1
+

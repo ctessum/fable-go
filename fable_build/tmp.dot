@@ -1,0 +1,5 @@
+digraph G {
+  sub -> exch_imp;
+  sub -> sub2;
+  sub2 -> exch_imp;
+}

@@ -1,0 +1,22 @@
+refinement {
+  input {
+    pdb {
+      file_name = model1.pdb
+      file_name = ligand2.pdb
+    }
+  }
+  refine {
+    strategy = individual_sites individual_adp occupancies *tls rigid_body
+  }
+  main {
+    ncs = True
+    number_of_macro_cycles = 5
+    ias = True
+  }
+  ncs {
+    restraint_group {
+      reference = "chain C and resseq 1:100"
+      selection = "chain D and resseq 1:100"
+    }
+  }
+}

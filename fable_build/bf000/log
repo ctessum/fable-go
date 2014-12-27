@@ -1,0 +1,8 @@
+CAUGHT EXCEPTION: (argument #0)
+ARGUMENT LEADING TO EXCEPTION: 1
+Traceback (most recent call last):
+  File "/home/chris/go/src/github.com/ctessum/fable-go/fable_sources/libtbx/easy_mp.py", line 237, in __call__
+    result = O.func(arg)
+  File "/home/chris/go/src/github.com/ctessum/fable-go/fable_sources/libtbx/tst_easy_mp.py", line 132, in bad_func
+    raise RuntimeError(str(arg))
+RuntimeError: 1

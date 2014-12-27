@@ -1,0 +1,4 @@
+a=0
+include file tmp/tmp1.params
+x=1
+
